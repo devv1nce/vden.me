@@ -70,3 +70,10 @@
   background: var(--lime-cream);
   box-shadow: 0 0 20px rgba(226,248,156,0.3);
 }
+
+.mobile-menu-container li button.menu-item {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
