@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --steel-blue: #3f7cac;
+  --cool-steel: #95afba;
+  --dry-sage: #bdc4a7;
+  --tea-green: #d5e1a3;
+  --lime-cream: #e2f89c;
+  --bg-dark: #0a1018;
+  --bg-card: #0f1a24;
+  --bg-card2: #122030;
+  --accent-glow: rgba(63, 124, 172, 0.4);
+  --lime-glow: rgba(226, 248, 156, 0.3);
+  --text-primary: #e2f89c;
+  --text-secondary: #95afba;
+  --border-color: rgba(63, 124, 172, 0.3);
+}
+
+* {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+  overflow-x: hidden;
+}
+
+/* Scanline overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--steel-blue);
+  border-radius: 3px;
+}
+
+/* Section headers */
+section h5 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--lime-cream);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h5::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--steel-blue), var(--lime-cream), transparent);
+}
+
+section h5::before {
+  content: '// ';
+  color: var(--steel-blue);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+}

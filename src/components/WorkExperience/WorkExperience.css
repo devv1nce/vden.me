@@ -1,0 +1,35 @@
+.experience-container { padding: 5rem 0; position: relative; }
+
+.experience-content { position: relative; padding: 0 3rem; }
+
+.arrow-right, .arrow-left {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  z-index: 10;
+  width: 2.5rem; height: 2.5rem;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(63,124,172,0.1);
+  border: 1px solid rgba(63,124,172,0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--cool-steel);
+}
+
+.arrow-right:hover, .arrow-left:hover {
+  background: var(--steel-blue);
+  color: var(--bg-dark);
+  border-color: var(--steel-blue);
+}
+
+.arrow-right { right: 0; }
+.arrow-left { left: 0; }
+
+@media (max-width: 768px) {
+  .experience-container { padding: 3rem 0; }
+  .experience-content { padding: 0 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  .experience-content { padding: 0 2rem; }
+  .arrow-right, .arrow-left { width: 2rem; height: 2rem; }
+}

@@ -1,0 +1,72 @@
+.mobile-menu {
+  width: 100%; height: 100vh;
+  background: rgba(10,16,24,0.97);
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(20px);
+}
+
+.mobile-menu.active { opacity: 1; pointer-events: all; }
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.mobile-logo .logo-bracket { color: var(--steel-blue); }
+.mobile-logo .logo-text { color: var(--lime-cream); }
+
+.mobile-menu-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-menu-container .menu-item {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  color: var(--cool-steel);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.mobile-menu-container .menu-item:hover { color: var(--lime-cream); }
+
+.mobile-menu-container .contact-btn {
+  margin-top: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--bg-dark);
+  background: var(--steel-blue);
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-container .contact-btn:hover {
+  background: var(--lime-cream);
+  box-shadow: 0 0 20px rgba(226,248,156,0.3);
+}

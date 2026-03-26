@@ -1,0 +1,31 @@
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.contact-info-card:hover { border-color: var(--steel-blue); }
+
+.contact-icon-wrap {
+  width: 2.5rem; height: 2.5rem;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(63,124,172,0.1);
+  border: 1px solid rgba(63,124,172,0.3);
+  flex-shrink: 0;
+}
+
+.contact-icon-wrap img { width: 1.2rem; height: auto; filter: invert(1) sepia(1) saturate(2) hue-rotate(180deg); }
+
+.contact-info-card span {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--cool-steel);
+  letter-spacing: 0.05em;
+  word-break: break-all;
+}

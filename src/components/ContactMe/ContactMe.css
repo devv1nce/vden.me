@@ -1,0 +1,9 @@
+.contact-container { padding: 5rem 0; }
+
+.contact-content { display: flex; gap: 3rem; align-items: flex-start; }
+
+@media (max-width: 768px) {
+  .contact-container { padding: 3rem 0; }
+  .contact-content { flex-direction: column; gap: 1.5rem; }
+  .contact-content > div { width: 100%; }
+}

@@ -1,0 +1,63 @@
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.skills-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(63,124,172,0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skills-card:hover::before, .skills-card.active::before { opacity: 1; }
+
+.skills-card:hover, .skills-card.active {
+  border-color: var(--steel-blue);
+  box-shadow: 0 0 20px rgba(63,124,172,0.2);
+}
+
+.skills-card.active {
+  border-color: var(--lime-cream);
+  box-shadow: 0 0 20px rgba(226,248,156,0.15);
+}
+
+.skill-icon {
+  width: 3rem; height: 3rem;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.skill-icon img { width: 2.5rem; height: auto; filter: saturate(0) brightness(1.5); transition: filter 0.3s ease; }
+.skills-card.active .skill-icon img, .skills-card:hover .skill-icon img { filter: saturate(1) brightness(1.2); }
+
+.skills-card span {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--cool-steel);
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.skills-card.active span, .skills-card:hover span { color: var(--lime-cream); }
+
+@media (max-width: 480px) {
+  .skills-card { padding: 1rem 0.5rem; }
+  .skill-icon { width: 2.2rem; height: 2.2rem; }
+  .skill-icon img { width: 1.8rem; }
+  .skills-card span { font-size: 0.6rem; letter-spacing: 0.05em; }
+}

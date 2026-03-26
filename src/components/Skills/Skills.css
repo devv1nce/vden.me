@@ -1,0 +1,30 @@
+.skills-container {
+  padding: 5rem 0;
+}
+
+.skills-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  min-width: 280px;
+}
+
+.skills-info {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .skills-container { padding: 3rem 0; }
+  .skills-content { flex-direction: column; }
+  .skills { grid-template-columns: repeat(2, 1fr); width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .skills { grid-template-columns: repeat(2, 1fr); }
+}
