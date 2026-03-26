@@ -18,9 +18,9 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
         <ul>
           {["hero","skills","portfolio","work-exp","contact"].map((id) => (
             <li key={id}>
-              <a onClick={() => handleScroll(id)} className="menu-item">
+              <button onClick={() => handleScroll(id)} className="menu-item">
                 {id === "work-exp" ? "Experience" : id.charAt(0).toUpperCase() + id.slice(1)}
-              </a>
+              </button>
             </li>
           ))}
           <button className="contact-btn">HIRE ME ▶</button>
