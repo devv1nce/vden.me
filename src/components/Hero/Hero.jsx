@@ -103,7 +103,7 @@ const Hero = () => {
             <div className="code-line indent3"><span className="code-str">'Unity'</span>, <span className="code-str">'Unreal'</span>, <span className="code-str">'Godot'</span></div>
             <div className="code-line indent2">];</div>
             <div className="code-line indent2"><span className="code-prop">this</span>.name = <span className="code-str">jason</span>;</div>
-            <div className="code-line indent2"><span className="code-prop">this</span>.age = <span className="code-str">17</span>;</div>
+            <div className="code-line indent2"><span className="code-prop">this</span>.age = <span className="code-str">18</span>;</div>
             <div className="code-line indent2"><span className="code-prop">this</span>.passion = <span className="code-num">9 gazillion</span>;</div>
             <div className="code-line indent">{"}"}</div>
             <div className="code-line indent"><span className="code-fn">buildWorlds</span>() {"{"}</div>
