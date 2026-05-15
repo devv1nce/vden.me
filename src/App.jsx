@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import PBG from "./components/ParticalBackground";
+
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -13,6 +15,7 @@ const App = () => {
     <>
       <Navbar />
       <div className="container">
+        <PBG/>
         <Hero />
         <Skills />
         <Portfolio />
