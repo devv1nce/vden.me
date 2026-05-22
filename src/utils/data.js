@@ -74,7 +74,7 @@ export const WORK_EXPERIENCE = [
 ];
 
 export const PORTFOLIO_PROJECTS = [
-  {
+ {
     title: "Cooking Chaos",
     genre: "Fast Paced Co-op Cooking Game",
     engine: "Roblox Studio",
@@ -82,6 +82,7 @@ export const PORTFOLIO_PROJECTS = [
       "A chaotic multiplayer cooking game inspired by Overcooked where players must coordinate to prepare meals under pressure with unpredictable mechanics.",
     tags: ["Roblox", "Lua", "Multiplayer", "Game Systems"],
     playType: "external",
+    growth: "Developing this project highlights my ability to architect synchronized multiplayer state machines and complex networking structures to handle real-time physics and time-management systems. Actively building all the 3D assets independently has pushed me to rapidly improve my technical art pipeline and asset optimization workflows, teaching me how to balance a clean visual aesthetic with efficient game performance.",
     inDevelopment: true,
     image: "./assets/images/cookingmadness.png",
     playUrl: "https://roblox.com",
@@ -95,6 +96,7 @@ export const PORTFOLIO_PROJECTS = [
       "Fast Paced, tower defense inspired game where players must plant seeds to grow weapons and defend their farm against waves of aliens",
     tags: ["Roblox", "Tower Defense", "Game Economy"],
     playType: "external",
+    growth: "This project showcases my systems engineering skills as I design a dynamic day/night cycle that integrates seamlessly with player progression, interactive resting mechanics, and a customizable tower-defense loadout system. Engineering a responsive inventory framework where players can swap weapon capabilities on the fly has deepened my understanding of state delegation and data-driven gameplay design.",
     inDevelopment: true,
     image: "./assets/images/rofall.png",
     playUrl: "https://roblox.com",
@@ -125,8 +127,10 @@ export const SCHOOL_PROJECTS = [
     description:
       "Highschool Final Project 2025. Players float through the sky using balloons while collecting point orbs to earn currency used for skins, trails, and abilities.",
     tags: ["Roblox", "Physics", "UI Systems", "Game Economy"],
+    growth: "This project served as my Project-Based Learning (PBL) capstone, requiring me to implement full-stack gameplay systems including a main menu UI, competitive leaderboards, and persistent cloud saving via Datastores. Overcoming these mechanical hurdles improved my debugging workflow and taught me how to structure scalable game logic—foundational computer science skills that I will carry directly into college-level software engineering.",
     playType: "external",
     inDevelopment: false,
+    playable: false,
     image: "./assets/images/skyhigh.png",
     playUrl: "https://roblox.com",
     color: "#bdc4a7",
@@ -137,10 +141,12 @@ export const SCHOOL_PROJECTS = [
     description: "Informative Video about the civil rights movement in the 1960s.",
     tags: ["History", "Video", "Final Project"],
     type: "video",
+    growth: "For this academic PBL assignment, I analyzed primary and secondary sources regarding the 1960s Civil Rights Movement to synthesize historical data into a structured narrative. Beyond technical video editing, the experience sharpened my research methodology, evidence verification, and visual communication skills. Learning to present complex real-world data concisely is a core asset that will help me excel in future research-heavy academic environments and team projects.",
     inDevelopment: false,
+    playable: true,
     image: null,
-    playType: "external",
-    playUrl: "https://itch.io",
+    playType: "external", 
+    playUrl: "https://youtu.be/cEO4kayTR5o", 
     color: "#d5e1a3",
   },
 ];

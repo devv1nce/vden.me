@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <section id="hero" className="hero-container">
       <div className="hero-content">
-        <div className="hero-tag">
+        {/* <div className="hero-tag">
           <span className="tag-dot" />
           <span>AVAILABLE FOR PROJECTS</span>
-        </div>
+        </div> */}
         <h1 className="hero-title">
           <span className="title-line">GAME</span>
           <span className="title-line accent">DEVELOPER</span>
@@ -28,7 +28,7 @@ const Hero = () => {
 
         <div className="hero-stats">
           <div className="stat">
-            <span className="stat-num">12+</span>
+            <span className="stat-num">3+</span>
             <span className="stat-label">Games Released</span>
           </div>
           <div className="stat-divider" />
@@ -54,7 +54,7 @@ const Hero = () => {
             <div className="code-line"><span className="code-kw">class</span> <span className="code-name">GameDev</span> {"{"}</div>
             <div className="code-line indent"><span className="code-kw">constructor</span>() {"{"}</div>
             <div className="code-line indent2"><span className="code-prop">this</span>.engines = [</div>
-            <div className="code-line indent3"><span className="code-str">'Unity'</span>, <span className="code-str">'Unreal'</span>, <span className="code-str">'Godot'</span></div>
+            <div className="code-line indent3"><span className="code-str">'Unity'</span>, <span className="code-str">'Unreal'</span>, <span className="code-str">'Roblox Studio'</span></div>
             <div className="code-line indent2">];</div>
             <div className="code-line indent2"><span className="code-prop">this</span>.name = <span className="code-str">jason</span>;</div>
             <div className="code-line indent2"><span className="code-prop">this</span>.age = <span className="code-str">18</span>;</div>
@@ -71,10 +71,12 @@ const Hero = () => {
         <div className="engine-badges">
           <div className="engine-badge">UNITY</div>
           <div className="engine-badge">UNREAL</div>
-          <div className="engine-badge">GODOT</div>
+          <div className="engine-badge">ROBLOX</div>
           <div className="engine-badge">C#</div>
           <div className="engine-badge">C++</div>
-          <div className="engine-badge">GDScript</div>
+          <div className="engine-badge">LUAU</div>
+          <div className="engine-badge">PYTHON</div>
+
         </div>
       </div>
     </section>
