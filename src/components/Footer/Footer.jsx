@@ -11,9 +11,8 @@ const Footer = () => {
           <span className="logo-text">GAMEDEV</span>
           <span className="logo-bracket">/&gt;</span>
         </div>
-        <span className="footer-copy">© 2025 — Built with passion & caffeine</span>
+        <span className="footer-copy">© 2026 — Built with passion & caffeine</span>
         <div className="footer-status">
-          <span className="status-dot" />
           <span>AVAILABLE FOR HIRE</span>
         </div>
       </div>

@@ -29,3 +29,12 @@
   letter-spacing: 0.05em;
   word-break: break-all;
 }
+
+.contact-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
