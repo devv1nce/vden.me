@@ -149,4 +149,18 @@ export const SCHOOL_PROJECTS = [
     playUrl: "https://youtu.be/cEO4kayTR5o", 
     color: "#d5e1a3",
   },
+  {
+    title: "Video/Podcast Project",
+    subject: "English Research Project",
+    description: "Informative Video about the use of Ai and its effect on Todays dating scene.",
+    tags: ["History", "Video", "Final Project"],
+    type: "video",
+    // growth: "For this academic PBL assignment, I analyzed primary and secondary sources regarding the 1960s Civil Rights Movement to synthesize historical data into a structured narrative. Beyond technical video editing, the experience sharpened my research methodology, evidence verification, and visual communication skills. Learning to present complex real-world data concisely is a core asset that will help me excel in future research-heavy academic environments and team projects.",
+    inDevelopment: false,
+    playable: true,
+    image: null,
+    playType: "external", 
+    playUrl: "https://youtu.be/YfYc3jXSqOU", 
+    color: "#d5e1a3",
+  },
 ];
