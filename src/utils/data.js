@@ -155,7 +155,7 @@ export const SCHOOL_PROJECTS = [
     description: "An informative video exploring how dating apps, algorithms, AI companions, and digital beauty standards are reshaping modern dating culture. Note: The audio becomes out of sync midway through the video due to lost original project files.",
     tags: ["History", "Video", "Final Project"],
     type: "video",
-    growth: "Developing this 10-minute podcast script challenged me to synthesize diverse data sources—including Pew Research, NPR, and online surveys—into an engaging, conversational format[cite: 1]. By critically analyzing the cultural impacts of AI, algorithms, and digital beauty standards, I significantly improved my ability to translate complex sociological research into accessible media[cite: 1].",
+    growth: "Developing this 10-minute podcast script challenged me to synthesize diverse data sources—including Pew Research, NPR, and online surveys—into an engaging, conversational format. By critically analyzing the cultural impacts of AI, algorithms, and digital beauty standards, I significantly improved my ability to translate complex sociological research into accessible media.",
     inDevelopment: false,
     playable: true,
     image: "./assets/images/mdtb.png",
