@@ -7,14 +7,10 @@ const ContactInfoCard = ({ iconUrl, text, linkUrl }) => {
       <div className="contact-icon-wrap">
         <img src={iconUrl} alt="" />
       </div>
-      {/* If linkUrl exists, render a link. Otherwise, render plain text. */}
-      {linkUrl ? (
-        <a href={linkUrl} target="_blank" rel="noreferrer" className="contact-link">
-          {text}
-        </a>
-      ) : (
-        <span>{text}</span>
-      )}
+      {/* Hardcoding the link tag temporarily to force a change */}
+      <a href={linkUrl} target="_blank" rel="noreferrer" className="contact-link">
+        {text}
+      </a>
     </div>
   );
 };

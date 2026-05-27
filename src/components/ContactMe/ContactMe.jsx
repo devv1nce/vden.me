@@ -13,11 +13,13 @@ const ContactMe = () => {
           <ContactInfoCard
             iconUrl="./assets/images/email-icon.svg"
             text="jason@vden.me"
+            linkUrl="mailto:jason@vden.me"
           />
 
           <ContactInfoCard
             iconUrl="./assets/images/discord.svg"
-            text="https://discord.gg/KEc8r3BUTy"
+            text="discord.gg"
+            linkUrl="https://discord.gg/KEc8r3BUTy"
           />
         </div>
 
